@@ -4,4 +4,6 @@
     <f-like />
   </view>
   <f-content images="{{list.image}}" content="{{ list.content }}"/>
+  <f-change title="{{list.title}}"/>
+  
 </view>
