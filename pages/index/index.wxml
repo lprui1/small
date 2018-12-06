@@ -1,2 +1,7 @@
-<f-date index="{{ list.index }}"/>
-<f-like />
+<view class='box'>
+  <view class='header'>
+    <f-date index="{{ list.index }}"/>
+    <f-like />
+  </view>
+  <f-content images="{{list.image}}" content="{{ list.content }}"/>
+</view>

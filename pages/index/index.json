@@ -1,6 +1,7 @@
 {
   "usingComponents":{
     "f-like":"/components/like/index",
-    "f-date":"/components/date/index"
+    "f-date":"/components/date/index",
+    "f-content":"/components/content/content"
   }
 }

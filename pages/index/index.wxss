@@ -1,1 +1,9 @@
 /**index.wxss**/
+.box {
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+}
