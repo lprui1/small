@@ -6,7 +6,7 @@ class http extends HTTP {
       url: 'classic/latest',
       success: res => {
         console.log(res)
-      }
+      } 
     })
   }
 }

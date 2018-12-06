@@ -8,7 +8,7 @@ class HTTP{
       url: config.api_url+params.url,
       method:params.method,
       data:params.data,
-      header:{
+      header:{ 
         'content-type':'application/json',
         "appkey":config.appKey 
       },
