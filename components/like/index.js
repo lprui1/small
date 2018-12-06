@@ -29,17 +29,20 @@ Component({
    */
   methods: {
     onlike() {
-      let like = this.properties.like
-      let count = this.properties.count
+      let { like } = this.properties
+      let {count} = this.properties
       count = like ? count - 1 : count + 1
+      console.log(like)
       this.setData({
         like: !like,
         count
       })
+      let behavior = this.properties.like ? 'like' : 'cancel'
+      console.log(behavior)
       this.triggerEvent(
-        'like',//自定义事件
+        'like',//自定义事件 
         {
-          "name": "xin"
+              behavior
         }
       )
     }
