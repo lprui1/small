@@ -13,7 +13,12 @@ class HTTP{
         "appkey":config.appKey 
       },
       success:res => {
-        params.success(res)
+        if (res.statusCode == 200){
+          params.success(res)
+        }else{
+          console.log('错误')
+        }
+       
         console.log(res)
       }
     })
