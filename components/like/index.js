@@ -1,3 +1,6 @@
+    import { http } from '../../models/like.js'
+    
+
 // components/like/index.js
 Component({
   /**
