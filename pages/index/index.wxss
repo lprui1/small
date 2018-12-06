@@ -1,0 +1,15 @@
+/**index.wxss**/
+.box {
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+}
+.share{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:100rpx;
+}

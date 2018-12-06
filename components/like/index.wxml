@@ -1,0 +1,4 @@
+<view class='like_box' bind:tap='onlike'>
+    <image src='{{ like ? yesSrc :noSrc }}' class='img'/>
+    <view class='num'>{{ count }}</view>
+</view>

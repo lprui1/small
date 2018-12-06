@@ -1,0 +1,19 @@
+/* components/like/index.wxss */
+.img{
+  width:32rpx;
+  height:28rpx;
+}
+.like_box{
+  width:80rpx;
+  height:90rpx;
+  /* border:1px solid; */
+  position: relative;
+  line-height: 100rpx;
+  margin-right:20rpx;
+}
+.num{
+  position: absolute;
+  top:-15rpx;
+  left:35rpx;
+  font-size:20rpx;
+}

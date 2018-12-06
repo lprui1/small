@@ -1,0 +1,12 @@
+<view class='box'>
+  <view class='header'>
+    <f-date index="{{ list.index }}"/>
+  <view class='share'>
+ <f-like count="{{ list.fav_nums }}" like="{{ list.like_status }}" bind:like='onlike'/>
+      <f-share />
+  </view>
+  </view>
+  <f-content images="{{list.image}}" content="{{ list.content }}"/>
+  <f-change title="{{list.title}}"/>
+  
+</view>
