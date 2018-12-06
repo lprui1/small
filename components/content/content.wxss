@@ -1,7 +1,7 @@
 /* components/content/content.wxss */
 .content {
   position: relative;
-  padding-bottom: 175rpx;
+  padding-bottom: 140rpx;
 }
 image {
   width: 100%;
