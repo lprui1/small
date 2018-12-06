@@ -2,7 +2,10 @@
   "usingComponents":{
     "f-like":"/components/like/index",
     "f-date":"/components/date/index",
+<<<<<<< HEAD
     "f-share":"/components/share/share",
+=======
+>>>>>>> 5c2e0505c9658d7058496f5dd85b6d8c10f8365c
     "f-content":"/components/content/content",
     "f-change":"/components/change/index"
   }

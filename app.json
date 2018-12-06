@@ -7,5 +7,33 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+<<<<<<< HEAD
+=======
+  },
+  "tabBar": {
+    "color": "#c7c7c7",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/1.jpg",
+        "iconPath": "images/1.jpg",
+        "pagePath": "pages/index/index",
+        "text": "流行"
+      },
+      {
+        "selectedIconPath": "images/2.jpg",
+        "iconPath": "images/2.jpg",
+        "pagePath": "pages/index/index",
+        "text": "喜欢"
+      },
+      {
+        "selectedIconPath": "images/3.jpg",
+        "iconPath": "images/3.jpg",
+        "pagePath": "pages/index/index",
+        "text": "书单"
+      }
+    ]
+>>>>>>> 5c2e0505c9658d7058496f5dd85b6d8c10f8365c
   }
 }
