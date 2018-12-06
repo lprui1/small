@@ -1,0 +1,20 @@
+import {config} from '../config.js'
+class HTTP{
+  request(params){
+    if(!params.method){
+      params.method = "get" 
+    }
+    wx.request({
+      url: config.api_url+params.url,
+      method:params.method,
+      data:params.data,
+      header:{
+        'content-type':'application/json'
+      },
+      success:res => {
+        params.success(res)
+        console.log(res)
+      }
+    })
+  }
+}

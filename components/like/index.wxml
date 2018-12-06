@@ -1,2 +1,2 @@
 <!--components/like/index.wxml-->
-<text>我是like组件</text>
+<image src='./images/2.png' class='img'/>

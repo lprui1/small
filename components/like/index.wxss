@@ -1,1 +1,5 @@
 /* components/like/index.wxss */
+.img{
+  width:32rpx;
+  height:28rpx;
+}
