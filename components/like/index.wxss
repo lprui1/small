@@ -2,7 +2,6 @@
 .img{
   width:32rpx;
   height:28rpx;
-<<<<<<< HEAD
 }
 .like_box{
   width:80rpx;
@@ -17,6 +16,4 @@
   top:-15rpx;
   left:35rpx;
   font-size:20rpx;
-=======
->>>>>>> 5c2e0505c9658d7058496f5dd85b6d8c10f8365c
 }

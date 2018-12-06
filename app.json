@@ -7,8 +7,6 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-<<<<<<< HEAD
-=======
   },
   "tabBar": {
     "color": "#c7c7c7",
@@ -34,6 +32,5 @@
         "text": "书单"
       }
     ]
->>>>>>> 5c2e0505c9658d7058496f5dd85b6d8c10f8365c
   }
 }

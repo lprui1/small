@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 <view class='like_box' bind:tap='onlike'>
     <image src='{{ like ? yesSrc :noSrc }}' class='img'/>
     <view class='num'>{{ count }}</view>
 </view>
-=======
 <!--components/like/index.wxml-->
-<image src='./images/2.png' class='img'/>
->>>>>>> 5c2e0505c9658d7058496f5dd85b6d8c10f8365c
