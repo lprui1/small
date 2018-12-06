@@ -5,7 +5,7 @@ class http extends HTTP {
     this.request({
       url: 'classic/latest',
       success: res => {
-        console.log(res)
+        // console.log(res)
         callback(res)
       } 
     })

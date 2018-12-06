@@ -19,7 +19,7 @@ class HTTP{
           console.log('错误')
         }
        
-        console.log(res)
+        // console.log(res)
       }
     })
   }

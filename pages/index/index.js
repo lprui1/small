@@ -13,7 +13,7 @@ Page({
   },
   //事件处理函数
   onlike :function(ev){
-    console.log(ev.detail.behavior)
+    // console.log(ev.detail.behavior)
       let behavior = ev.detail.behavior
       let { id , type } = this.data.list
       likehttps.like(behavior,id,type)
@@ -21,7 +21,7 @@ Page({
   },
   onLoad: function () {
       https.modelindex(res => {
-        console.log(res)
+        // console.log(res)
         this.setData({
           list:res.data
         })
