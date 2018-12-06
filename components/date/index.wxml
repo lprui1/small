@@ -1,0 +1,12 @@
+<!--components/date/index.wxml-->
+<view class='date'>
+  <view class='date-top'>
+    <view class='now'>No.</view>
+    <view class='day'>17</view>
+    <view class='stand'></view>
+  </view>
+  <view class='date-bottom'>
+    <view class='mouth'>三月</view>
+    <view class='year'>2018</view>
+  </view>
+</view>

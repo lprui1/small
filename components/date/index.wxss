@@ -1,0 +1,31 @@
+/* components/date/index.wxss */
+.date {
+  display: flex;
+}
+.date .date-top {
+  display: flex
+}
+.date-top .now {
+  padding-top: 38rpx;
+  font-size: 24px;
+}
+.date-top .day {
+  font-size: 42px;
+  font-weight: bold;
+  padding-right: 15rpx;
+}
+.date-top .stand {
+  margin-top: 24rpx;
+  border-right: 2px solid #000;
+  height: 58rpx;
+}
+.date-bottom {
+  padding-left: 15rpx;
+}
+.date-bottom .mouth {
+  padding-top: 13rpx;
+  font-size: 16px;
+}
+.date-bottom .year {
+  font-size: 16px;
+}
