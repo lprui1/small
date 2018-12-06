@@ -1,2 +1,2 @@
-<f-date />
+<f-date index="{{ list.index }}"/>
 <f-like />

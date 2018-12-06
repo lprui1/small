@@ -8,14 +8,16 @@ const app = getApp()
 
 Page({
   data: {
-  
+    list:{}
   },
   //事件处理函数
   
   onLoad: function () {
-
       https.modelindex(res => {
         console.log(res)
+        this.setData({
+          list:res.data
+        })
       })
   },
   getUserInfo: function(e) {
