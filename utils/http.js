@@ -10,7 +10,7 @@ class HTTP{
       data:params.data,
       header:{
         'content-type':'application/json',
-        "appkey":config.appKey
+        "appkey":config.appKey 
       },
       success:res => {
         params.success(res)
