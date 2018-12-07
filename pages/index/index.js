@@ -1,9 +1,7 @@
 import { http } from '../../models/index.js'
 import { likehttp } from '../../models/like.js'
-import { nextModel } from '../../models/content.js'
 let https = new http()
 let likehttps = new likehttp()
-let nextModels = new nextModel()
 
 //index.js
 //获取应用实例
@@ -21,11 +19,18 @@ Page({
       likehttps.like(behavior,id,type)
       
   },
-  onnext :function(){
-    let { index } = this.data.list
-    console.log(index)
-    nextModels.next(index)
-    
+  onnext: function () {
+    let index = this.data.list.index
+    wx.request({
+      url: 'http://bl.7yue.pro/v1/classic/' + index +'/next',
+      header: {
+        'content-type': 'application/json',
+        "appkey": '5ZbxAY1FmDNQP1T1'
+      },
+      success:(res => {
+        console.log(res)
+      })
+    })
   },
   onLoad: function () {
     https.modelindex(res => {
@@ -34,7 +39,6 @@ Page({
         list:res.data
       })
     })
-    
   },
   getUserInfo: function(e) {
     console.log(e)
