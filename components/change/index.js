@@ -6,6 +6,9 @@ Component({
   properties: {
     title:{
       type:String
+    },
+    data:{
+      type:Number
     }
   },
 
@@ -20,10 +23,19 @@ Component({
    * 组件的方法列表
    */
   methods: {
+
     onnext() {
       this.triggerEvent(
         'next'
       )
-    }
+    },
+
+      prev(){
+            let { data } = this.properties
+            console.log(data)
+        this.triggerEvent("pre",{
+          data
+        })
+      }
   }
 })

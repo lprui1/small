@@ -10,6 +10,9 @@ class likehttp extends HTTP{
         data:{
           art_id:artid,
           type:category     
+             },
+             success:res => {
+
              }
       })
   }

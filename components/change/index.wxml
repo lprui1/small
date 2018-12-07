@@ -1,7 +1,7 @@
 <!--components/change/index.wxml-->
 <view class='change'>
   <view>
-    <view class='iconfont icon-sanjiaoleft'></view>
+    <view class='iconfont icon-sanjiaoleft' bind:tap='prev'></view>
     <view class='title'>{{title}}</view>
     <view class='iconfont icon-sanjiaoright' bind:tap='onnext'></view>
   </view>

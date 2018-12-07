@@ -1,5 +1,7 @@
 import { http } from '../../models/index.js'
 import { likehttp } from '../../models/like.js'
+import { prev } from '../../models/previou.js'
+let prevss  = new prev()
 let https = new http()
 let likehttps = new likehttp()
 
@@ -12,6 +14,15 @@ Page({
     list:{}
   },
   //事件处理函数
+  prev:function(ev){
+    let index = ev.detail.data
+    prevss.prevs(index,res => {
+        console.log(res)
+        this.setData({
+          list:res.data
+        })
+    })
+  },
   onlike :function(ev){
     // console.log(ev.detail.behavior)
       let behavior = ev.detail.behavior
@@ -33,12 +44,12 @@ Page({
     })
   },
   onLoad: function () {
-    https.modelindex(res => {
-      console.log(res)
-      this.setData({
-        list:res.data
+      https.modelindex(res => {
+        console.log(res)
+        this.setData({
+          list:res.data
+        })
       })
-    })
   },
   getUserInfo: function(e) {
     console.log(e)
