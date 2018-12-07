@@ -39,7 +39,9 @@ Page({
         "appkey": '5ZbxAY1FmDNQP1T1'
       },
       success:(res => {
-        console.log(res)
+        this.setData({
+          list: res.data
+        })
       })
     })
   },

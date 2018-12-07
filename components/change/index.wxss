@@ -21,7 +21,10 @@
 
 
 .change{
-  padding: 0 80rpx;
+  width: 590rpx;
+  position: fixed;
+  bottom: 38rpx;
+  left: 78rpx;
 }
 .change view {
   height: 80rpx;
