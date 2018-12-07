@@ -6,7 +6,7 @@
       <f-share />
   </view>
   </view>
-  <f-content images="{{list.image}}" content="{{ list.content }}"/>
-  <f-change title="{{list.title}}"/>
+  <f-content images="{{list.image}}" content="{{ list.content }}" types="{{list.type}}"/>
+  <f-change title="{{list.title}}" bind:next='onnext'/>
   
 </view>

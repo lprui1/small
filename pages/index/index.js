@@ -1,7 +1,9 @@
 import { http } from '../../models/index.js'
 import { likehttp } from '../../models/like.js'
+import { nextModel } from '../../models/content.js'
 let https = new http()
 let likehttps = new likehttp()
+let nextModels = new nextModel()
 
 //index.js
 //获取应用实例
@@ -19,13 +21,20 @@ Page({
       likehttps.like(behavior,id,type)
       
   },
+  onnext :function(){
+    let { index } = this.data.list
+    console.log(index)
+    nextModels.next(index)
+    
+  },
   onLoad: function () {
-      https.modelindex(res => {
-        // console.log(res)
-        this.setData({
-          list:res.data
-        })
+    https.modelindex(res => {
+      console.log(res)
+      this.setData({
+        list:res.data
       })
+    })
+    
   },
   getUserInfo: function(e) {
     console.log(e)

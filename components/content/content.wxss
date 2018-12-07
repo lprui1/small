@@ -14,7 +14,7 @@ image {
   left:30rpx;
   font-size: 46rpx;
 }
-.title .title-top {
+.title-top {
   color: #fff;
   padding-bottom: 30rpx;
 }

@@ -2,8 +2,8 @@
 <view class='content'>
   <image style="background-color: #eeeeee;" mode="{{item.mode}}" src="{{images}}"></image>
   <view class='title'>
-    <view class='title-top'>电</view>
-    <view>影</view>
+    <view class='title-top'>{{typea}}</view>
+    <view>{{typeb}}</view>
     <view class='title-bottom'>。</view>
   </view>
   <view class='details'>{{ content }}。</view>

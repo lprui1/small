@@ -3,7 +3,7 @@
   <view>
     <view class='iconfont icon-sanjiaoleft'></view>
     <view class='title'>{{title}}</view>
-    <view class='iconfont icon-sanjiaoright'></view>
+    <view class='iconfont icon-sanjiaoright' bind:tap='onnext'></view>
   </view>
 </view>
 
