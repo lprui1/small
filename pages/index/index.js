@@ -17,7 +17,7 @@ Page({
   prev:function(ev){
     let index = ev.detail.data
     prevss.prevs(index,res => {
-        console.log(res)
+        // console.log(res)
         this.setData({
           list:res.data
         })
@@ -32,6 +32,10 @@ Page({
   },
   onnext: function () {
     let index = this.data.list.index
+      // console.log(this.data.list)
+    if (index >= 8) {
+      index = 7
+    }
     wx.request({
       url: 'http://bl.7yue.pro/v1/classic/' + index +'/next',
       header: {
@@ -47,14 +51,14 @@ Page({
   },
   onLoad: function () {
       https.modelindex(res => {
-        console.log(res)
+        // console.log(res)
         this.setData({
           list:res.data
         })
       })
   },
   getUserInfo: function(e) {
-    console.log(e)
+    // console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

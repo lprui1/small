@@ -32,13 +32,13 @@ Component({
       let { like } = this.properties
       let {count} = this.properties
       count = like ? count - 1 : count + 1
-      console.log(like)
+      // console.log(like)
       this.setData({
         like: !like,
         count
       })
       let behavior = this.properties.like ? 'like' : 'cancel'
-      console.log(behavior)
+      // console.log(behavior)
       this.triggerEvent(
         'like',//自定义事件 
         {

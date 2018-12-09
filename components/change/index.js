@@ -32,7 +32,7 @@ Component({
 
       prev(){
             let { data } = this.properties
-            console.log(data)
+            // console.log(data)
         this.triggerEvent("pre",{
           data
         })

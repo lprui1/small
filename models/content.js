@@ -7,7 +7,7 @@ class nextModel extends HTTP {
        url: 'classic/'+index+'/next',
        method:'get',
        success:(res => {
-         console.log(res)
+        //  console.log(res)
          index(res)
        })
      })
