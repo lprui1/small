@@ -1,5 +1,6 @@
 {
   "usingComponents":{
-    "f-search":"/components/booklist/search/index"
+    "f-search":"/components/booklist/search/index",
+    "f-hotlist":"/components/booklist/hotlist/index"
   }
 }

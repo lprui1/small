@@ -1,4 +1,5 @@
 <!--pages/booklist/booklist.wxml-->
 <view>
   <view><f-search /></view>
+  <f-hotlist />
 </view>

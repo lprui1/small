@@ -1,0 +1,5 @@
+<!--components/booklist/hotlist/index.wxml-->
+<view class='hotlist'>
+  <view class='title'>精选</view>
+  <view></view>
+</view>

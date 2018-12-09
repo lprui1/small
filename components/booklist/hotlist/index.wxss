@@ -1,0 +1,8 @@
+/* components/booklist/hotlist/index.wxss */
+.hotlist {
+  background: #f9f9f9;
+}
+.title {
+  text-align: center;
+  font-size: 31rpx;
+}

@@ -1,4 +1,4 @@
-import { HTTP } from '../utils/http.js' 
+import { HTTP } from '../../utils/http.js' 
 class prev extends HTTP {
   prevs(index,list){
     // console.log(index)

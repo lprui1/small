@@ -1,6 +1,6 @@
-import { http } from '../../models/index.js'
-import { likehttp } from '../../models/like.js'
-import { prev } from '../../models/previou.js'
+import { http } from '../../models/index/index.js'
+import { likehttp } from '../../models/index/like.js'
+import { prev } from '../../models/index/previou.js'
 let prevss  = new prev()
 let https = new http()
 let likehttps = new likehttp()

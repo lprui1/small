@@ -1,4 +1,7 @@
 /* components/booklist/search/index.wxss */
+.search {
+  margin-bottom: 20rpx;
+}
 input {
   margin: 0 auto;
   text-align: center;
