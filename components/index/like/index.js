@@ -1,4 +1,4 @@
-    import { http } from '../../models/like.js'
+    import { http } from '../../////////../models/like.js'
     
 
 // components/like/index.js
