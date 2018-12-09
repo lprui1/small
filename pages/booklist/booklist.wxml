@@ -1,2 +1,4 @@
 <!--pages/booklist/booklist.wxml-->
-<text>pages/booklist/booklist.wxml</text>
+<view>
+  <view><f-search /></view>
+</view>
