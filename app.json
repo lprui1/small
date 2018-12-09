@@ -25,13 +25,13 @@
         "selectedIconPath": "images/5.png",
         "iconPath": "images/2.jpg",
         "pagePath": "pages/index/index",
-        "text": "喜欢"
+        "text": "书单"
       },
       {
         "selectedIconPath": "images/4.png",
         "iconPath": "images/3.jpg",
         "pagePath": "pages/index/index",
-        "text": "书单"
+        "text": "喜欢"
       }
     ]
   }
