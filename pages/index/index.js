@@ -18,7 +18,7 @@ Page({
   prev:function(ev){
     let index = Number(ev.detail.data)
     prevss.prevs(index,res => {
-      console.log(res)
+      // console.log(res)
         this.setData({
           list:res.data
         })
@@ -32,15 +32,15 @@ Page({
   },
   onnext: function () {
     let index = this.data.list.index
-    console.log(index)
+    // console.log(index)
     if (index >= 8) {
       index = 7
     }
     let key = index+1
     let key1 = `class-${key}`
-    console.log(key1)
+    // console.log(key1)
     var ss = wx.getStorageSync(key1)
-    console.log(ss)
+    // console.log(ss)
     if(ss == ''){
       wx.request({
         url: 'http://bl.7yue.pro/v1/classic/' + index + '/next',
@@ -59,7 +59,7 @@ Page({
   
   },
   audioPlay: function () {
-    console.log(111)
+    // console.log(111)
     this.audioCtx.play()
   },
   audioPause: function () {
