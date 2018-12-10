@@ -6,4 +6,5 @@
   background:#f7f7f7;
   color:#acacac;
   border-radius:100rpx;
+  font-size:26rpx;
 }

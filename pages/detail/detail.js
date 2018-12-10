@@ -1,35 +1,18 @@
-import { http } from '../../models/prelike/prelist.js'
-import { httptwo } from '../../models/prelike/num.js'
-let https = new http()
-let httpTwo = new httptwo()
-const app = getApp()
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    prelist:[],
-    lx:'',
-    likenum:{}
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
-    https.modelindex(res => {
-      this.setData({
-        prelist:res.data
-      })
-    }),
-    httpTwo.modelindex(res => {
-      console.log(res.data)
-      this.setData({
-        likenum: res.data
-      })
-      // console.log(this.data.likenum)
-    })
+  onLoad: function (options) {
+
   },
 
   /**

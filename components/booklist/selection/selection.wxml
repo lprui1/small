@@ -2,7 +2,7 @@
   <view class="jx">精选</view>
   <view class="list">
     <!--单个列表信息-->
-    <view class="panle1" wx:for='{{lists}}' wx:key='{{index}}'>
+    <view class="panle1" wx:for='{{lists}}' wx:key='{{index}}' bindtap="details">
       <image src="{{item.image}}"></image>
       <view class="main">
         <view class="tit">{{item.title}}</view>

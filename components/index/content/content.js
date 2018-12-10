@@ -13,6 +13,7 @@ Component({
     types: {
       type:String,
       observer(newVal, oldVal, changedPath) {
+        // console.log(newVal, oldVal, changedPath)
         let val = newVal == 100 ? '电影' : '' || newVal == 200 ? '音乐' : '' || newVal == 300 ? '句子' : ''
         // 千万不要在一个observer函数中去修改属性本身的值，否则的话很有可能引起无限递归造成内存泄漏的情况。
         var dateList = val.split("");
@@ -43,6 +44,28 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    /*播放*/
+    // audioPlay: function () {
+    //   console.log(this.properties)
+    //   let { plays } = this.properties
+    //   this.setData({
+    //     plays:!plays
+    //   })
+    //   this.triggerEvent(
+    //     'play'
+    //   )
+    // },
+    // /*暂停播放 */
+    // audioPause: function () {
+    //   let { plays } = this.properties
+    //   this.setData({
+    //     plays: !plays
+    //   })
+    //   this.triggerEvent(
+    //     'playa'
+    //   )
+    // }
+    /*播放*/
     audioPlay: function () {
       let { plays } = this.properties
       this.setData({
@@ -51,15 +74,13 @@ Component({
       this.triggerEvent(
         'play'
       )
-    },
-    audioPause: function () {
-      let { plays } = this.properties
-      this.setData({
-        plays: !plays
+      console.log(this.properties)
+      wx.playBackgroundAudio({
+        // dataUrl: 'this.properties.images',
+        // title: '薛之谦',
+        // //图片地址地址
+        // coverImgUrl: 'http://i.gtimg.cn/music/photo/mid_album_90/a/F/000QgFcm0v8WaF.jpg'
       })
-      this.triggerEvent(
-        'playa'
-      )
-    }
+    },
   }
 })

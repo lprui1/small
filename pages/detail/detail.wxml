@@ -1,0 +1,12 @@
+<view class="detail">
+  <view class="search">
+    <f-search />
+  </view>
+  <!--详情信息-->
+  <view class="detailmess">
+    <!--1-->
+    <view class="panle1">
+      
+    </view>
+  </view>
+</view>

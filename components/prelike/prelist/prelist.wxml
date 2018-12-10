@@ -3,8 +3,10 @@
   <view class="prelist">
     <view class="prepanle1" wx:for="{{Prelist}}" wx:key="index">
       <view class="panlehead">
-        <text class="ly">{{item.type}}</text>
-        <f-like count="{{item.fav_nums}}"/>
+        <text class="ly" wx:if="{{item.type === 100}}">电影</text>
+        <text class="ly" wx:elif="{{item.type === 200}}">音乐</text>
+        <text class="ly" wx:else="{{item.type === 300}}">句子</text>
+        <f-like count="{{item.fav_nums}}" like="{{item.like_status}}"/>
       </view>
       <image src="{{item.image}}"></image>
       <view class="panletext">
