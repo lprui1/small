@@ -2,8 +2,8 @@
   <image src="images/person.jpg" class="bc"></image>
   <!--头像-->
   <view class="premess">
-    <image src='images/touxiang.jpg'></image>
-    <text>SmallFour</text>
+    <image src='{{avatarUrls}}'></image>
+    <text>{{nickName}}</text>
   </view>
   <view class="own">
     <view class="ownpanle">

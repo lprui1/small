@@ -6,6 +6,12 @@ Component({
   properties: {
     count:{
       type:Number
+    },
+    avatarUrls:{
+      type:String
+    },
+    nickName:{
+      type:String
     }
   },
 
@@ -13,7 +19,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    avatarUrls:'',
+    nickName:''
   },
 
   /**

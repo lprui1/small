@@ -11,7 +11,10 @@ Page({
   data: {
     prelist:[],
     lx:'',
-    likenum:{}
+    likenum:{},
+    avatarUrl: "",//用户头像
+    nickName: "",//用户昵称
+
   },
 
   /**
@@ -29,6 +32,21 @@ Page({
         likenum: res.data
       })
       // console.log(this.data.likenum)
+    })
+    var that = this;
+    /**
+     * 获取用户信息
+     */
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res);
+        var avatarUrl = 'userInfo.avatarUrl';
+        var nickName = 'userInfo.nickName';
+        that.setData({
+          avatarUrl: res.userInfo.avatarUrl,
+          nickName: res.userInfo.nickName,
+        })
+      }
     })
   },
 
