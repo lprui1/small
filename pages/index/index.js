@@ -11,7 +11,8 @@ const app = getApp()
 
 Page({
   data: {
-    list:{}
+    list: {},
+    src: './radio/1.mp3'
   },
   //事件处理函数
   prev:function(ev){
@@ -57,12 +58,20 @@ Page({
      
   
   },
-  onLoad: function () {
+  audioPlay: function () {
+    console.log(111)
+    this.audioCtx.play()
+  },
+  audioPause: function () {
+    this.audioCtx.pause()
+  },
+  onLoad: function (e) {
       https.modelindex(res => {
         this.setData({
           list:res.data
         })
       })
+    this.audioCtx = wx.createAudioContext('myAudio')
   },
   getUserInfo: function(e) {
     app.globalData.userInfo = e.detail.userInfo

@@ -13,3 +13,8 @@
   align-items: center;
   width:100rpx;
 }
+audio {
+  background: #fff;
+  color: #fff;
+  display: none;
+}
