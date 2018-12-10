@@ -1,4 +1,4 @@
-// components/search/search.js
+
 Component({
   /**
    * 组件的属性列表
@@ -18,6 +18,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+      search(e){
+        console.log(e.detail.value)
+        let data = e.detail.value
+        this.triggerEvent('search',{
+          data
+        })
+      }
   }
 })

@@ -1,4 +1,6 @@
 // pages/booklist/booklist.js
+import { searchhttp } from '../../models/booklist/search.js'
+let searchhttps = new searchhttp()
 Page({
 
   /**
@@ -7,13 +9,20 @@ Page({
   data: {
 
   },
-
+  searchs: function (ev) {
+      console.log(ev)
+      let searchlist = ev.detail.data
+    searchhttps.search(searchlist,res => {
+      console.log(res)
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+     
 
-  },
+      },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
