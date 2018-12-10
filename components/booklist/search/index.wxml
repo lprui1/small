@@ -1,4 +1,0 @@
-<!--components/booklist/search/index.wxml-->
-<view class='search'>
-  <input placeholder='搜索图书名称'/>
-</view>
