@@ -1,13 +1,21 @@
 // pages/booklist/booklist.js
 import { searchhttp } from '../../models/booklist/search.js'
 let searchhttps = new searchhttp()
+import { hotlist } from '../../models/booklist/selection.js'
+import { shortComment } from '../../models/booklist/short_comment.js'
+let hotlists = new hotlist()
+let shortComments = new shortComment()
+
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    list:[],
+    idlist:[]
   },
   searchs: function (ev) {
       console.log(ev)
@@ -20,9 +28,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     
+    hotlists.modelindex(res => {
+      console.log(res)
+      this.setData({
+        list: res.data
+      })
+      for (let i of res.data) {
+        console.log(i.id)
+        this.data.idlist.push(i.id)
+        console.log(this.data.idlist)
+      }
+    }),
+      shortComments.modelindex(res => {
+        console.log(res)
+      })
 
       },
+   
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

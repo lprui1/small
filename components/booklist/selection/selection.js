@@ -4,14 +4,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    lists:{
+      type:Array
+    }
   },
-
   /**
    * 组件的初始数据
    */
   data: {
-
+    lists:[]
   },
 
   /**
