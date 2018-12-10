@@ -1,4 +1,6 @@
 // pages/booklist/booklist.js
+import { searchhttp } from '../../models/booklist/search.js'
+let searchhttps = new searchhttp()
 import { hotlist } from '../../models/booklist/selection.js'
 import { shortComment } from '../../models/booklist/short_comment.js'
 let hotlists = new hotlist()
@@ -15,7 +17,13 @@ Page({
     list:[],
     idlist:[]
   },
-
+  searchs: function (ev) {
+      console.log(ev)
+      let searchlist = ev.detail.data
+    searchhttps.search(searchlist,res => {
+      console.log(res)
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -23,18 +31,21 @@ Page({
     hotlists.modelindex(res => {
       console.log(res)
       this.setData({
-        list:res.data
+        list: res.data
       })
-      for(let i of res.data){
+      for (let i of res.data) {
         console.log(i.id)
         this.data.idlist.push(i.id)
         console.log(this.data.idlist)
       }
-    })
-    shortComments.modelindex(res =>{
-      console.log(res)
-    })
-  },
+    }),
+      shortComments.modelindex(res => {
+        console.log(res)
+      })
+
+      },
+   
+  
 
   /**
    * 生命周期函数--监听页面初次渲染完成

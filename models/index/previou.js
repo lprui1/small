@@ -21,7 +21,6 @@ class prev extends HTTP {
     }else{
       list(ss)
     }
-   
   }
 }
 export { prev }
