@@ -1,18 +1,28 @@
 // pages/booklist/booklist.js
+import { hotlist } from '../../models/booklist/selection.js'
+let hotlists = new hotlist()
+
+const app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    list:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    hotlists.modelindex(res => {
+      console.log(res)
+      this.setData({
+        list:res.data
+      })
+    })
   },
 
   /**
