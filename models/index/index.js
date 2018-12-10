@@ -1,4 +1,4 @@
-import { HTTP } from '../utils/http.js'
+import { HTTP } from '../../utils/http.js'
 
 class http extends HTTP {
   modelindex(callback) {

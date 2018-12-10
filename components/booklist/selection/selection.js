@@ -1,4 +1,4 @@
-// components/booklist/search/index.js
+// components/selection/selection.js
 Component({
   /**
    * 组件的属性列表

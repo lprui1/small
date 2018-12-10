@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "f-prehead": "/components/prelike/prehead/prehead",
+    "f-prelist": "/components/prelike/prelist/prelist"
+  }
+}

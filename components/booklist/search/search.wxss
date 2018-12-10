@@ -1,0 +1,9 @@
+.search input{
+  width:700rpx;
+  height:68rpx;
+  margin:0 auto;
+  text-align: center;
+  background:#f7f7f7;
+  color:#acacac;
+  border-radius:100rpx;
+}

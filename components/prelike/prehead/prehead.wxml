@@ -1,0 +1,4 @@
+<view class="perpic">
+  <image src="images/person.jpg"></image>
+  hello
+</view>

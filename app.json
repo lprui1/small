@@ -1,9 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/booklist/booklist"
-    
-    
+    "pages/prelike/prelike",
+    "pages/booklist/booklist"  
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,13 +25,13 @@
       {
         "selectedIconPath": "images/5.png",
         "iconPath": "images/2.jpg",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/booklist/booklist",
         "text": "书单"
       },
       {
         "selectedIconPath": "images/4.png",
         "iconPath": "images/3.jpg",
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/prelike/prelike",
         "text": "喜欢"
       }
     ]
