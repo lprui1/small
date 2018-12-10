@@ -2,7 +2,7 @@
   "pages": [
     "pages/prelike/prelike",
     "pages/index/index",
-    "pages/booklist/booklist"  
+    "pages/booklist/booklist" 
   ],
   "window": {
     "backgroundTextStyle": "light",

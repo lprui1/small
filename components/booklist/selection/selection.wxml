@@ -2,13 +2,13 @@
   <view class="jx">精选</view>
   <view class="list">
     <!--单个列表信息-->
-    <view class="panle1">
-      <image src="images/book1.jpg"></image>
+    <view class="panle1" wx:for='{{lists}}' wx:key='{{index}}'>
+      <image src="{{item.image}}"></image>
       <view class="main">
-        <view class="tit">爱你就像爱生命</view>
-        <view class="author">李银河</view>
+        <view class="tit">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
         <view class="mess">
-          <text>233</text>
+          <text>{{item.fav_nums}}</text>
           <text>喜欢</text>
           <text>·</text>
           <text>68</text>

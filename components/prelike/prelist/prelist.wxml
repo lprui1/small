@@ -1,15 +1,14 @@
 <view class="perlike">
   <view class="likes">喜欢</view>
   <view class="prelist">
-    <view class="prepanle1">
+    <view class="prepanle1" wx:for="{{Prelist}}" wx:key="index">
       <view class="panlehead">
-        <text class="ly">精选</text>
-        <f-like />
+        <text class="ly">{{item.type}}</text>
+        <f-like count="{{item.fav_nums}}"/>
       </view>
-      <image src="images/pic1.jpg"></image>
+      <image src="{{item.image}}"></image>
       <view class="panletext">
-        {{content}}
-        "人生不能像做菜，把所有的料准备好才下锅"
+        {{item.content}}
       </view>
     </view>
   </view>

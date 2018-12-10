@@ -1,4 +1,4 @@
 <view>
-  <f-search />
-  <f-selection />
+  <f-search bind:search='searchs' />
+  <f-selection lists="{{list}}"/>
 </view>

@@ -1,10 +1,16 @@
 <!--components/content/content.wxml-->
 <view class='content'>
-  <image style="background-color: #eeeeee;" mode="{{item.mode}}" src="{{images}}"></image>
+  <image style="background-color: #eeeeee;" mode="{{item.mode}}" src="{{images}}" class='big'></image>
+  <view class='small' wx:if="{{types==200}}">
+    <image src='{{ yesSrc }}' bind:tap="audioPlay" wx:if="{{plays}}"></image>
+    <image src='{{ noSrc }}' bind:tap="audioPause" wx:if="{{!plays}}"></image>
+  </view>
   <view class='title'>
     <view class='title-top'>{{typea}}</view>
     <view>{{typeb}}</view>
     <view class='title-bottom'>。</view>
   </view>
   <view class='details'>{{ content }}。</view>
+  
 </view>
+
