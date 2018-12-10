@@ -1,6 +1,8 @@
 // pages/booklist/booklist.js
 import { hotlist } from '../../models/booklist/selection.js'
+import { shortComment } from '../../models/booklist/short_comment.js'
 let hotlists = new hotlist()
+let shortComments = new shortComment()
 
 const app = getApp()
 
@@ -10,7 +12,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[]
+    list:[],
+    idlist:[]
   },
 
   /**
@@ -22,6 +25,14 @@ Page({
       this.setData({
         list:res.data
       })
+      for(let i of res.data){
+        console.log(i.id)
+        this.data.idlist.push(i.id)
+        console.log(this.data.idlist)
+      }
+    })
+    shortComments.modelindex(res =>{
+      console.log(res)
     })
   },
 
