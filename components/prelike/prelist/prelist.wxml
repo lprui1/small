@@ -1,46 +1,15 @@
 <view class="perlike">
   <view class="likes">喜欢</view>
   <view class="prelist">
-    <view class="prepanle1">
+    <view class="prepanle1" wx:for="{{Prelist}}" wx:key="index">
       <view class="panlehead">
-        <text class="ly">类型</text>
-        <f-like /> 
+        <text class="ly">{{item.type}}</text>
+        <f-like count="{{item.fav_nums}}"/>
       </view>
-      <image src="images/pic1.jpg"></image>
+      <image src="{{item.image}}"></image>
       <view class="panletext">
-        有的人浅薄，有的人金玉其败絮其中。有的有的得的
+        {{item.content}}
       </view>
     </view>
-    <view class="prepanle1">
-      <view class="panlehead">
-        <text class="ly">类型</text>
-        <f-like /> 
-      </view>
-      <image src="images/pic1.jpg"></image>
-      <view class="panletext">
-        有的人浅薄，有的人金玉其败絮其中。有的有的得的
-      </view>
-    </view>
-    <view class="prepanle1">
-      <view class="panlehead">
-        <text class="ly">类型</text>
-        <f-like /> 
-      </view>
-      <image src="images/pic1.jpg"></image>
-      <view class="panletext">
-        有的人浅薄，有的人金玉其败絮其中。有的有的得的
-      </view>
-    </view>
-    <view class="prepanle1">
-      <view class="panlehead">
-        <text class="ly">类型</text>
-        <f-like /> 
-      </view>
-      <image src="images/pic1.jpg"></image>
-      <view class="panletext">
-        有的人浅薄，有的人金玉其败絮其中。有的有的得的
-      </view>
-    </view>
-    列表列表列表
   </view>
 </view>

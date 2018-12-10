@@ -1,6 +1,4 @@
-import { http } from '../../../models/index/like.js'
-    
-
+import { http } from '../../../models/index/like.js'    
 // components/like/index.js
 Component({
   /**
@@ -14,7 +12,6 @@ Component({
       type: Boolean
     }
   },
-
   /**
    * 组件的初始数据
    */

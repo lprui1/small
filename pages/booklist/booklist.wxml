@@ -1,4 +1,3 @@
-<!--pages/booklist/booklist.wxml-->
 <view>
   <f-search bind:search='searchs' />
   <f-selection lists="{{list}}"/>

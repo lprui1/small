@@ -29,18 +29,18 @@ Page({
    */
   onLoad: function (options) {
     hotlists.modelindex(res => {
-      console.log(res)
+      // console.log(res)
       this.setData({
         list: res.data
       })
       for (let i of res.data) {
-        console.log(i.id)
+        // console.log(i.id)
         this.data.idlist.push(i.id)
-        console.log(this.data.idlist)
+        // console.log(this.data.idlist)
       }
     }),
       shortComments.modelindex(res => {
-        console.log(res)
+        // console.log(res)
       })
 
       },
