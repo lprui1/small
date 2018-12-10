@@ -11,10 +11,11 @@ class http extends HTTP {
         var ss = wx.getStorageSync(key1)
         if(ss == ''){
           callback(res)
+          wx.setStorageSync(key1, res)
         }else{
           callback(ss)
         }
-        wx.setStorageSync(key1, res)
+        
       
       } 
     })
