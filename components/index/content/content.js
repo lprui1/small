@@ -43,23 +43,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    audioPlay: function () {
-      let { plays } = this.properties
-      this.setData({
-        plays:!plays
-      })
-      this.triggerEvent(
-        'play'
-      )
-    },
-    audioPause: function () {
-      let { plays } = this.properties
-      this.setData({
-        plays: !plays
-      })
-      this.triggerEvent(
-        'playa'
-      )
-    }
+    
   }
 })

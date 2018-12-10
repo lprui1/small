@@ -1,8 +1,8 @@
 {
-  "pages": ["pages/booklist/booklist",
+  "pages": [
     "pages/index/index",
+    "pages/booklist/booklist",
     "pages/prelike/prelike"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
