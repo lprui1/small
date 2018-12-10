@@ -1,0 +1,10 @@
+.perpic{
+  width:100%;
+  height:556rpx;
+  background:red;
+}
+image{
+  width:100%;
+  height:556rpx;
+  z-index:2;
+}
