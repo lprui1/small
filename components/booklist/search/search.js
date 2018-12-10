@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+      show:false
   },
 
   /**
@@ -23,6 +23,16 @@ Component({
         let data = e.detail.value
         this.triggerEvent('search',{
           data
+        })
+      },
+      sear(){
+          this.setData({
+            show:true
+          })
+      },
+      qxs(){
+        this.setData({
+          show: false
         })
       }
   }

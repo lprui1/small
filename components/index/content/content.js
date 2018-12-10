@@ -45,28 +45,8 @@ Component({
    */
   methods: {
     /*播放*/
-    // audioPlay: function () {
-    //   console.log(this.properties)
-    //   let { plays } = this.properties
-    //   this.setData({
-    //     plays:!plays
-    //   })
-    //   this.triggerEvent(
-    //     'play'
-    //   )
-    // },
-    // /*暂停播放 */
-    // audioPause: function () {
-    //   let { plays } = this.properties
-    //   this.setData({
-    //     plays: !plays
-    //   })
-    //   this.triggerEvent(
-    //     'playa'
-    //   )
-    // }
-    /*播放*/
     audioPlay: function () {
+      console.log(this.properties)
       let { plays } = this.properties
       this.setData({
         plays:!plays
@@ -74,13 +54,16 @@ Component({
       this.triggerEvent(
         'play'
       )
-      console.log(this.properties)
-      wx.playBackgroundAudio({
-        // dataUrl: 'this.properties.images',
-        // title: '薛之谦',
-        // //图片地址地址
-        // coverImgUrl: 'http://i.gtimg.cn/music/photo/mid_album_90/a/F/000QgFcm0v8WaF.jpg'
-      })
     },
+    /*暂停播放 */
+    audioPause: function () {
+      let { plays } = this.properties
+      this.setData({
+        plays: !plays
+      })
+      this.triggerEvent(
+        'playa'
+      )
+    }
   }
 })
