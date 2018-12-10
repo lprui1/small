@@ -32,10 +32,7 @@ Page({
   },
   onnext: function () {
     let index = this.data.list.index
-<<<<<<< HEAD
-=======
     // console.log(index)
->>>>>>> origin/master
     if (index >= 8) {
       index = 7
     }
