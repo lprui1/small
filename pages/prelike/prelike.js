@@ -1,18 +1,25 @@
-// pages/prelike/prelike.js
+import { http } from '../../models/prelike/prelist.js'
+let https = new http()
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    prelist:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function () {
+    https.modelindex(res => {
+      this.setData({
+        prelist:res.data
+      })
+      console.log(this.data.prelist)
+    })
   },
 
   /**

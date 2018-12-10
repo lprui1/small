@@ -1,4 +1,3 @@
-
 const config = {
   api_url: 'http://bl.7yue.pro/v1/',
   appKey: '5ZbxAY1FmDNQP1T1'

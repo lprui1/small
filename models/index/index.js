@@ -5,7 +5,6 @@ class http extends HTTP {
     this.request({
       url: 'classic/latest',
       success: res => {
-        
         let key = res.data.index
         let key1 = `class-${key}`
         var ss = wx.getStorageSync(key1)
@@ -15,8 +14,6 @@ class http extends HTTP {
         }else{
           callback(ss)
         }
-        
-      
       } 
     })
   }

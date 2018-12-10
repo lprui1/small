@@ -31,7 +31,6 @@ Page({
   },
   onnext: function () {
     let index = this.data.list.index
-    console.log(index)
     if (index >= 8) {
       index = 7
     }
@@ -54,8 +53,6 @@ Page({
         list: ss.data
       })
     }
-     
-  
   },
   onLoad: function () {
       https.modelindex(res => {

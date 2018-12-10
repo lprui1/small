@@ -1,10 +1,59 @@
 .perpic{
   width:100%;
   height:556rpx;
-  background:red;
+  background:#fff;
+  position: relative;
 }
-image{
+.bc{
   width:100%;
-  height:556rpx;
+  height:370rpx;
   z-index:2;
+}
+/*头像信息*/
+.premess{
+  width:120rpx;
+  z-index:4;
+  position: absolute;
+  top:250rpx;
+  left:310rpx;
+}
+.premess>image{
+  width:120rpx;
+  height:120rpx;
+  border-radius:100%;
+}
+.premess>text{
+  font-size:26rpx;
+  letter-spacing: 1rpx;
+  font-weight: normal;
+}
+.own{
+  width:100%;
+  padding:0 150rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-top:62rpx;
+  font-size:22rpx;
+}
+/*关于我们  我的书单*/
+.ownpanle{
+  width:93rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.ownpanle>image{
+  width:34rpx;
+  height:34rpx;
+  margin:0 auto;
+}
+/**/
+.numb{
+  font-size:26rpx;
+  font-weight:normal;
+}
+.ownpanle text{
+  margin-top:20rpx;
+  color:#999999;
 }

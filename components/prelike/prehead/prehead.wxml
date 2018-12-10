@@ -1,4 +1,18 @@
 <view class="perpic">
-  <image src="images/person.jpg"></image>
-  hello
+  <image src="images/person.jpg" class="bc"></image>
+  <!--头像-->
+  <view class="premess">
+    <image src='images/touxiang.jpg'></image>
+    <text>SmallFour</text>
+  </view>
+  <view class="own">
+    <view class="ownpanle">
+      <image src="images/tan.jpg"></image>
+      <text>关于我们</text>
+    </view>
+    <view class="ownpanle">
+      <view class="numb">17</view>
+      <text>我的书单</text>
+    </view>
+  </view>
 </view>
