@@ -1,8 +1,10 @@
 <!--components/index/music/music.wxml-->
 <view class='content'>
   <view class='image'>
-    <image style="background-color: #eeeeee;" mode="{{item.mode}}" src="{{images}}" class='audio_post{{music_on?" music_on":""}}' style="animation-play-state:{{music_playing?'running':'paused'}}"
+    <navigator url="/pages/Indexdetail/index?id={{ids}}&type={{types}}" hover-class="navigator-hover">
+      <image style="background-color: #eeeeee;" mode="{{item.mode}}" src="{{images}}" class='audio_post{{music_on?" music_on":""}}' style="animation-play-state:{{music_playing?'running':'paused'}}"
     ></image>
+    </navigator>
   </view>
   <view class='small' wx:if="{{types==200}}">
     <image src='{{ plays? yesSrc:noSrc }}' bind:tap="audioPlay" class='zt'></image>

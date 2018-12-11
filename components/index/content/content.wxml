@@ -1,8 +1,7 @@
 <view class='content'>
-  <image mode="{{item.mode}}" src="{{images}}" class='big'></image>
-  <view class='small' wx:if="{{types==200}}">
-  <image style="background-color: #eeeeee;" mode="{{item.mode}}" src="{{images}}" class='big'></image>
-  </view>
+  <navigator url="/pages/Indexdetail/index?id={{ids}}&type={{types}}" hover-class="navigator-hover">
+    <image mode="{{item.mode}}" src="{{images}}" class='big'></image>
+  </navigator>
   <view class='title'>
     <view class='title-top'>{{typea}}</view>
     <view>{{typeb}}</view>

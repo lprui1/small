@@ -28,7 +28,7 @@ Component({
     onlike() {
       let { like } = this.properties
       let {count} = this.properties
-      count == like ? count - 1 : count + 1
+      count = like ? count - 1 : count + 1
       // console.log(like)
       this.setData({
         like: !like,

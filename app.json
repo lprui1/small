@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/detail/detail",
     "pages/booklist/booklist",
-    "pages/prelike/prelike"
+    "pages/prelike/prelike",
+    "pages/Indexdetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

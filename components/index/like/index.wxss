@@ -4,6 +4,7 @@
   height:28rpx;
 }
 .like_box{
+  text-align: center;
   width:80rpx;
   height:90rpx;
   /* border:1px solid; */
@@ -13,7 +14,7 @@
 }
 .num{
   position: absolute;
-  top:-15rpx;
-  left:35rpx;
+  top:-24rpx;
+  left:58rpx;
   font-size:20rpx;
 }

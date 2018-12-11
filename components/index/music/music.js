@@ -74,6 +74,9 @@ Component({
     },
     url:{
       type:String
+    },
+    ids:{
+      type:String
     }
   },
 
@@ -92,6 +95,7 @@ Component({
     audioAnimation: null,
     music_on: true,
     music_playing: false,
+    ids:''
   },
 
   /**

@@ -65,6 +65,7 @@ Page({
   },
   onLoad: function (e) {
       https.modelindex(res => {
+        console.log(res)
         this.setData({
           list:res.data
         })

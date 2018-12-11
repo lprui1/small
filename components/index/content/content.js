@@ -26,6 +26,9 @@ Component({
           typeb: arr[1]
         })
       }
+    },
+    ids:{
+      type:String
     }
   },
 
@@ -37,7 +40,9 @@ Component({
     typeb:'',
     plays:true,
     yesSrc:'images/zt.jpg',
-    noSrc:'images/bf.jpg'
+    noSrc:'images/bf.jpg',
+    ids:'',
+    types:''
   },
 
   /**
