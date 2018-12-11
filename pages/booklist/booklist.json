@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "f-search":"/components/booklist/search/search",
+    "f-searching": "/components/booklist/searching/searching",
     "f-selection":"/components/booklist/selection/selection"
   }
-}
+} 

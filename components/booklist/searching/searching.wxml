@@ -1,0 +1,30 @@
+<view class='box'>
+<input placeholder='搜索图书名称' bindinput='search' class="input1" />
+<view class='qx' bindtap='qxs'>
+    取消
+</view>
+</view>
+<view class='top'></view>
+<view wx:if='{{ !list.length }}'>
+    <view class='lishi'>
+   <view class='shu'></view> 历史搜索
+</view> 
+<view class='lishi_content'>
+      <view class='content'>假如真有时光机</view><view class='content'>格林童话</view><view class='content'>大家都有病</view><view class='content'>听说</view>
+</view> 
+<view class='lishi'>
+   <view class='shu'></view> 热门搜索
+</view> 
+<view class='lishi_content'>
+      <view class='content'>人间失格</view><view class='content'>红楼梦</view><view class='content'>简爱</view><view class='content'>茶花女</view><view class='content'>人间失格</view><view class='content'>红楼梦</view><view class='content'>简爱</view><view class='content'>茶花女</view>
+</view> 
+
+</view>
+
+<view class='contents' wx:if='{{ list.length }}' wx:for='{{list}}' wx:for-item='name'>
+    <image src='./image/book.png' class='img' />
+    <view>
+          <view>{{name.title}}</view>
+          <view class='author'>{{name.author[0]}}</view>
+    </view> 
+</view> 

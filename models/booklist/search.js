@@ -5,7 +5,7 @@ class searchhttp extends HTTP {
     this.request({
       url: 'book/search?q='+q,
       success: res => {
-        callback(res)
+        callback(res) 
       }
     })
   }
