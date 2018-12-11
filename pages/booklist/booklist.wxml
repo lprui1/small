@@ -1,4 +1,7 @@
 <view>
   <f-search bind:search='searchs' />
   <f-selection lists="{{list}}" bind:lists='id'/>
+  <f-search bind:search='searchs' bind:searchlist='show' bind:searchlists='showa'wx:if='{{!shows}}'/>
+  <f-selection lists="{{list}}" wx:if='{{!shows}}'/>
+  <f-searching wx:if='{{shows}}' list="{{list}}"  bind:searchlist='show'  bind:search='searchs'/>
 </view>

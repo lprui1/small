@@ -1,4 +1,4 @@
 <view class="prelike">  
-  <f-prehead />
+  <f-prehead avatarUrls="{{avatarUrl}}" nickName="{{nickName}}"/>
   <f-prelist Prelist="{{prelist}}" count="{{likenum.count}}"/>
 </view>

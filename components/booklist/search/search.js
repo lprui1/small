@@ -1,19 +1,21 @@
-
+ 
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+      shows:{
+        type:Boolean
+      }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-      show:false
-  },
-
+      show:false,
+      showa:false
+},
   /**
    * 组件的方法列表
    */
@@ -28,11 +30,19 @@ Component({
           this.setData({
             show:true
           })
+          let shows = this.data.show
+            this.triggerEvent('searchlist', {
+                shows
+            })
       },
-      qxs(){
-        this.setData({
-          show: false
-        })
-      }
+    sears() {
+      this.setData({
+        showa: true
+      })
+      let shows = this.data.showa
+      this.triggerEvent('searchlists', {
+        shows
+      })
+    }
   }
 })

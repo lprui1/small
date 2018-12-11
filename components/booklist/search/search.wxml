@@ -4,5 +4,8 @@
   <view class='qx' wx:if='{{show}}' bindtap='qxs'>
       取消
   </view>
+  <view class='box'>
+    <input placeholder='搜索图书名称' bindinput='search' bindtap='sear' class="input" />
+  </view>
 </view>
 

@@ -6,7 +6,7 @@ import { shortComment } from '../../models/booklist/short_comment.js'
 let hotlists = new hotlist()
 let shortComments = new shortComment()
 
-const app = getApp()
+const app = getApp() 
 
 Page({
 
@@ -15,13 +15,23 @@ Page({
    */
   data: {
     list:[],
-    idlist:[]
+    idlist:[],
+    shows:false
   },
   searchs: function (ev) {
-      console.log(ev)
-      let searchlist = ev.detail.data
-    searchhttps.search(searchlist,res => {
-      console.log(res)
+      // console.log(ev)
+      
+  },
+  show:function(ev){
+    let show = ev.detail.shows
+    this.setData({
+        shows:show,
+    })
+  },
+  showa: function (ev) {
+    let show = ev.detail.shows
+    this.setData({
+      // showsa: show
     })
   },
   id: function (ev) {
@@ -32,7 +42,7 @@ Page({
    */
   onLoad: function (options) {
     hotlists.modelindex(res => {
-      // console.log(res)
+      console.log(res)
       this.setData({
         list: res.data
       })
