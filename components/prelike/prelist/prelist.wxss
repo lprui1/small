@@ -57,5 +57,5 @@ f-like {
   color:#999;
   overflow: hidden;
   text-overflow:ellipsis;
-  white-space: nowrap;
+  white-space: wrap;
 }

@@ -19,9 +19,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    details() {
+    details(ev) {
+      let id = ev.currentTarget.dataset.id
       wx.navigateTo({
-        url: '/pages/detail/detail',
+        url: '/pages/detail/detail?id='+id,
+      })
+      this.triggerEvent('lists',{
+        id
       })
     }
   }

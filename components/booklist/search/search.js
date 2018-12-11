@@ -19,7 +19,6 @@ Component({
    */
   methods: {
       search(e){
-        console.log(e.detail.value)
         let data = e.detail.value
         this.triggerEvent('search',{
           data

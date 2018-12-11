@@ -15,6 +15,7 @@
   background:#f7f7f7;
   color:#acacac;
   border-radius:100rpx;
+  font-size:26rpx;
 }
 .box{
   width:100%;
@@ -24,11 +25,12 @@
   align-items: center;
 }
 .qx{
-  color:#adadad;
-  border:1px solid;
-  border-radius: 30px;
+  color:#6d6d6d;
+  border:1px solid #6d6d6d;
+  border-radius: 100rpx;
   width:120rpx;
-  height:68rpx;
+  height:65rpx;
   text-align: center;
-  line-height:68rpx;
+  line-height:65rpx;
+  font-size:26rpx;
 }

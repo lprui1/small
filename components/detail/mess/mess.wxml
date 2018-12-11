@@ -1,0 +1,7 @@
+<view class="panlemain">
+  <view class="panle1">
+    <image src="{{Detlist.image}}"></image>
+    <text class="name">{{Detlist.title}}</text>
+    <text class="author">{{Detlist.author}}</text>
+  </view>
+</view>

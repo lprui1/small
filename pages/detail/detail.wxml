@@ -4,9 +4,11 @@
   </view>
   <!--详情信息-->
   <view class="detailmess">
-    <!--1-->
-    <view class="panle1">
-      
-    </view>
+    <f-mess Detlist="{{detlist}}"/> 
+    <f-duanping bind:lists="details" DP="{{dps}}"/>
+    <f-jianjie Detlist="{{detlist}}"/>
+    <f-bookmess Detlist="{{detlist}}"/>
   </view>
+  <!--页脚-->
+  <f-footer />
 </view>

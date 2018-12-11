@@ -1,0 +1,46 @@
+/*短评*/
+.duanping{
+  margin-top:20rpx;
+  width:100%;
+  background:#fff;
+}
+/*短评列表*/
+.dpmain{
+  width:100%;
+  padding:0 28rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  box-sizing: border-box;
+}
+.dpone:nth-child(1) {
+  background:#fffadd;
+}
+.dpone:nth-child(2){
+  background:#eefaff;
+}
+.dpone{
+  padding:0 28rpx;
+  height:52rpx;
+  line-height:52rpx;
+  display:flex;
+  justify-content:space-between;
+  font-size:22rpx;
+  border-radius:30rpx;
+  background:#f7f7f7;
+  margin-right:12rpx;
+  margin-bottom:20rpx;
+}
+.dpone>text:nth-child(1){
+  color:#666;
+  margin-right:20rpx;
+}
+.dpone>text:nth-child(2) {
+  color:#c0bfbd;
+}
+/*板块标题*/
+.title{
+  padding:30rpx 0;
+  font-size:28rpx;
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+/*简介*/
+.jianjie{
+  width:100%;
+  background:#fff;
+  margin-top:20rpx;
+}
+.jianjie>.mess{
+  font-size:24rpx;
+  letter-spacing: 2rpx;
+  padding:30rpx 62rpx;
+  line-height:45rpx;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+/*板块标题*/
+.title{
+  padding-top:30rpx;
+  font-size:28rpx;
+  text-align: center;
+}
