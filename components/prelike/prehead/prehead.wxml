@@ -3,7 +3,7 @@
   <!--头像-->
   <view class="premess">
     <image src='{{avatarUrls}}'></image>
-    <text>{{nickName}}</text>
+    <view>{{nickName}}</view>
   </view>
   <view class="own">
     <view class="ownpanle">
