@@ -7,14 +7,13 @@
   text-align: center;
   width:80rpx;
   height:90rpx;
-  /* border:1px solid; */
   position: relative;
   line-height: 100rpx;
   margin-right:20rpx;
 }
 .num{
   position: absolute;
-  top:-24rpx;
+  top:-14rpx;
   left:58rpx;
   font-size:20rpx;
 }

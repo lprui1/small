@@ -3,6 +3,9 @@
   <!--头像-->
   <view class="premess">
     <image src='{{avatarUrls}}'></image>
+  </view>
+  <!--用户名-->
+  <view class="user">
     <view>{{nickName}}</view>
   </view>
   <view class="own">

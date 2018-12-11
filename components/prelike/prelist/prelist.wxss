@@ -20,12 +20,12 @@
 }
 /*单个列表头部*/
 .panlehead{
+  width:100%;
+  box-sizing: border-box;
   padding: 20rpx;
   height:80rpx;
-  width:100%;
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 /*list*/
 .prelist{
@@ -44,6 +44,7 @@
 f-like {
   width:56rpx;
   margin-top:-30rpx;
+  margin-right:30rpx;
 }
 .prepanle1>image{
   width:100%;
