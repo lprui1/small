@@ -5,7 +5,6 @@
     "pages/prelike/prelike",
     "pages/Indexdetail/index",
     "pages/detail/detail"
-
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,13 @@
+<!--pages/Indexdetail/index.wxml-->
+<view class='content'>
+  <view class='title'>{{list.title}}</view>
+  <view class='type'>
+    <view>{{list.type==100?'电影':''}}</view>
+    <view>{{list.type==200?'音乐':''}}</view>
+    <view>{{list.type==300?'句子':''}}</view>
+    <f-like count="{{ list.fav_nums }}" like="{{ list.like_status }}" bind:like='onlike'/>
+  </view>
+  <image mode="{{item.mode}}" src="{{list.image}}" class='big' wx:if="{{list.type==100||list.type==300}}"></image>
+  <image mode="{{item.mode}}" src="{{list.image}}" class='small' wx:if="{{list.type==200}}"></image>
+  <view class='details'>{{ list.content }}。</view>
+</view>

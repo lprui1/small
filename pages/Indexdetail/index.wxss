@@ -1,0 +1,30 @@
+/* pages/Indexdetail/index.wxss */
+.content {
+  text-align: center;
+}
+.title {
+  font-size: 50rpx;
+  line-height: 100rpx;
+}
+.type {
+  padding-bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.type>view{
+  padding-top: 27rpx;
+} 
+.big {
+  width: 100%;
+  height: 500rpx;
+}
+.small {
+  border-radius: 50%;
+  background: #fff!important;
+  width: 422rpx;
+  height: 422rpx;
+}
+.details {
+  padding: 130rpx 95rpx 0;
+  font-size: 36rpx;
+}
