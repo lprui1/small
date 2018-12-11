@@ -6,7 +6,7 @@
       <f-share />
   </view>
   </view>
-  <f-content images="{{list.image}}" content="{{ list.content }}" types="{{list.type}}" bind:play='audioPlay' bind:playa='audioPause'/>
+  <f-content images="{{list.image}}" content="{{ list.content }}" types="{{list.type}}" wx:if="{{list.type==100||list.type==300}}"/>
+  <f-music images="{{list.image}}" content="{{ list.content }}" types="{{list.type}}" title="{{list.title}}" url="{{list.url}}" bind:play='audioPlay' bind:playa='audioPause' wx:if="{{list.type==200}}"/>
   <f-change title="{{list.title}}" data="{{ list.index }}" bind:pre="prev" bind:next='onnext'/>
-  <audio src="{{src}}" id="myAudio" controls loop></audio>
 </view>

@@ -4,6 +4,7 @@
     "f-date":"/components/index/date/index",
     "f-share":"/components/index/share/share",
     "f-content":"/components/index/content/content",
-    "f-change":"/components/index/change/index"
+    "f-change":"/components/index/change/index",
+    "f-music":"/components/index/music/music"
   }
 }

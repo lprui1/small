@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "f-search": "/components/booklist/search/search"
+  }
+}

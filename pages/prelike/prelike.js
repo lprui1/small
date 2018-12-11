@@ -1,5 +1,7 @@
 import { http } from '../../models/prelike/prelist.js'
+import { httptwo } from '../../models/prelike/num.js'
 let https = new http()
+let httpTwo = new httptwo()
 const app = getApp()
 Page({
 
@@ -7,7 +9,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    prelist:[]
+    prelist:[],
+    lx:'',
+    likenum:{},
+    avatarUrl: "",//用户头像
+    nickName: "",//用户昵称
+
   },
 
   /**
@@ -18,7 +25,28 @@ Page({
       this.setData({
         prelist:res.data
       })
-      console.log(this.data.prelist)
+    }),
+    httpTwo.modelindex(res => {
+      console.log(res.data)
+      this.setData({
+        likenum: res.data
+      })
+      // console.log(this.data.likenum)
+    })
+    var that = this;
+    /**
+     * 获取用户信息
+     */
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res);
+        var avatarUrl = 'userInfo.avatarUrl';
+        var nickName = 'userInfo.nickName';
+        that.setData({
+          avatarUrl: res.userInfo.avatarUrl,
+          nickName: res.userInfo.nickName,
+        })
+      }
     })
   },
 
