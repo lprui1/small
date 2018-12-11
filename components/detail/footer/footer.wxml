@@ -1,0 +1,8 @@
+<!--footer-->
+<view class='footers'>
+  <input placeholder='请输入你的短评'></input>
+  <view class="fright">
+    <f-like count/>
+    <f-share />
+  </view>
+</view>

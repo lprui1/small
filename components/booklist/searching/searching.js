@@ -37,7 +37,7 @@ Component({
           this.setData({
             list: res.data.books
           })
-          console.log(this.data.list)
+          // console.log(this.data.list)
         })
       }else{
         this.setData({

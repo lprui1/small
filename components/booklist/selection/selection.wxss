@@ -52,3 +52,9 @@ image{
   width:240rpx;
   height:222rpx;
 }
+/*超出部分省略号*/
+.tit,.author{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

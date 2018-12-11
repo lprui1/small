@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "f-search": "/components/booklist/search/search"
+    "f-search": "/components/booklist/search/search",
+    "f-mess": "/components/detail/mess/mess",
+    "f-duanping": "/components/detail/duanping/duanping",
+    "f-jianjie": "/components/detail/jianjie/jianjie",
+    "f-bookmess": "/components/detail/bookmess/bookmess",
+    "f-footer": "/components/detail/footer/footer"
   }
 }

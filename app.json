@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/detail/detail",
     "pages/booklist/booklist",
     "pages/prelike/prelike",
-    "pages/Indexdetail/index"
+    "pages/Indexdetail/index",
+    "pages/detail/detail"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

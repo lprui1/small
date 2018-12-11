@@ -1,0 +1,34 @@
+<!--书本信息-->
+<view class="bookmess">
+  <view class="title">书本信息</view>
+  <view class="bookmain">
+    <view>
+      <text class="left">出版社</text>
+      <text>{{Detlist.publisher}}</text>
+    </view>
+    <view>
+      <text class="left">出版年</text>
+      <text>{{Detlist.pubdate}}</text>
+    </view>
+    <view>
+      <text class="left">页数</text>
+      <text>{{Detlist.pages}}</text>
+    </view>
+    <view>
+      <text class="left">定价</text>
+      <text>{{Detlist.pubdate}}</text>
+    </view>
+    <view>
+      <text class="left">精装</text>
+      <text>{{Detlist.binding}}</text>
+    </view>
+    <view>
+      <text class="left">类型</text>
+      <text>{{Detlist.category}}</text>
+    </view>
+    <!-- <view>
+      <text class="left">参与者</text>
+      <text>{{Detlist.translator}}</text>
+    </view> -->
+  </view>
+</view>

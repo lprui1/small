@@ -1,0 +1,27 @@
+/*页脚*/
+.footers{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  height:86rpx;
+  padding:16rpx 28rpx;
+  background:#fff;
+  border-top:1px solid #ccc;
+  box-sizing:border-box;
+}
+.footers>input{
+  width:408rpx;
+  height:56rpx;
+  border:1px solid #000;
+  border-radius:30rpx;
+  font-size:22rpx;
+  padding:0 20rpx;
+}
+.fright{
+  width:140rpx;
+  display: flex;
+  justify-content: space-between;
+}
+f-like{
+  margin-top:-23rpx;
+}

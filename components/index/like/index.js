@@ -1,9 +1,9 @@
-import { http } from '../../../models/index/like.js'    
+import { http } from '../../../models/index/like.js'
 // components/like/index.js
 Component({
   /**
-   * 组件的属性列表
-   */
+  * 组件的属性列表
+  */
   properties: {
     count: {
       type: Number
@@ -13,8 +13,8 @@ Component({
     }
   },
   /**
-   * 组件的初始数据
-   */
+  * 组件的初始数据
+  */
   data: {
     like: true,
     yesSrc: 'images/2.png',
@@ -22,8 +22,8 @@ Component({
   },
 
   /**
-   * 组件的方法列表
-   */
+  * 组件的方法列表
+  */
   methods: {
     onlike() {
       let { like } = this.properties
@@ -39,7 +39,7 @@ Component({
       this.triggerEvent(
         'like',//自定义事件 
         {
-              behavior
+          behavior
         }
       )
     }

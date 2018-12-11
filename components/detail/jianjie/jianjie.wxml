@@ -1,0 +1,7 @@
+<!--简介-->
+<view class="jianjie">
+  <view class="title">内容简介</view>
+  <view class="mess">
+    {{Detlist.summary}}
+  </view>
+</view>

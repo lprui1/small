@@ -1,2 +1,2 @@
 <!--components/share/share.wxml-->
-<image src='./image/3.png' class='img'/>
+<image src='./image/3.png' class='img' bindtap='music'/>
