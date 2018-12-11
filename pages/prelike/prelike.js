@@ -14,6 +14,7 @@ Page({
     likenum:{},
     avatarUrl: "",//用户头像
     nickName: "",//用户昵称
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
 
   },
 
@@ -34,22 +35,41 @@ Page({
       // console.log(this.data.likenum)
     })
     var that = this;
-    /**
-     * 获取用户信息
-     */
-    wx.getUserInfo({
-      success: function (res) {
-        console.log(res);
-        var avatarUrl = 'userInfo.avatarUrl';
-        var nickName = 'userInfo.nickName';
-        that.setData({
-          avatarUrl: res.userInfo.avatarUrl,
-          nickName: res.userInfo.nickName,
-        })
+    // /**
+    //  * 获取用户信息
+    //  */
+    // wx.getUserInfo({
+    //   success: function (res) {
+    //     console.log(res);
+    //     var avatarUrl = 'userInfo.avatarUrl';
+    //     var nickName = 'userInfo.nickName';
+    //     that.setData({
+    //       avatarUrl: res.userInfo.avatarUrl,
+    //       nickName: res.userInfo.nickName,
+    //     })
+    //   }
+    // })
+    wx.getSetting({
+      success(res) {
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success(res) {
+              var avatarUrl = 'userInfo.avatarUrl';
+              var nickName = 'userInfo.nickName';
+              that.setData({
+                avatarUrl: res.userInfo.avatarUrl,
+                nickName: res.userInfo.nickName,
+              })
+            }
+          })
+        }
       }
     })
   },
-
+  bindGetUserInfo(e) {
+    console.log(e.detail.userInfo)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

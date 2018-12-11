@@ -8,7 +8,6 @@
   </view>
   <view class='small' wx:if="{{types==200}}">
     <image src='{{ plays? yesSrc:noSrc }}' bind:tap="audioPlay" class='zt'></image>
-    <!-- <image src='{{ noSrc }}' bind:tap="audioPause" wx:if="{{!plays}}" class='bf'></image> -->
   </view>
   <view class='title'>
     <view class='title-top'>{{typea}}</view>
