@@ -67,7 +67,7 @@
   border-bottom:1px solid #a7a7a7;
 }
 .img{
-  width:60rpx;
+  width:60rpx; 
   height:80rpx;
   margin-right:30rpx;
    margin-left:30rpx;

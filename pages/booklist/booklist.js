@@ -6,7 +6,7 @@ import { shortComment } from '../../models/booklist/short_comment.js'
 let hotlists = new hotlist()
 let shortComments = new shortComment()
 
-const app = getApp()
+const app = getApp() 
 
 Page({
 

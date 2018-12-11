@@ -31,7 +31,7 @@ Component({
     search(e) {
       console.log(e.detail.value)
       let data = e.detail.value
-      if(data != ""){
+      if(data != ""){ 
         searchhttps.search(data, res => {
 
           this.setData({

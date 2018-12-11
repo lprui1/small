@@ -27,4 +27,4 @@
           <view>{{name.title}}</view>
           <view class='author'>{{name.author[0]}}</view>
     </view> 
-</view>
+</view> 
