@@ -42,8 +42,6 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success(res) {
-              // var avatarUrl = 'userInfo.avatarUrl';
-              // var nickName = 'userInfo.nickName';
               that.setData({
                 avatarUrl: res.userInfo.avatarUrl,
                 nickName: res.userInfo.nickName,
@@ -59,16 +57,18 @@ Page({
   },
   bindGetUserInfo(e) {
     console.log(e.detail.userInfo)
+  },
+  login: function(ev) {
     this.setData({
-      avatarUrl: e.detail.userInfo.avatarUrl,
-      nickName: e.detail.userInfo.nickName,
+      avatarUrl: ev.detail.message.avatarUrl,
+      nickName: ev.detail.message.nickName,
     })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
