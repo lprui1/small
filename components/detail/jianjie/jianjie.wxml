@@ -1,7 +1,10 @@
 <!--简介-->
+
 <view class="jianjie">
   <view class="title">内容简介</view>
+  <wxs src="../../../utils/filter.wxs" module="util"/>
   <view class="mess">
-    {{Detlist.summary}}
+  
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ util.deletes(content) }}</text>
   </view>
 </view>
