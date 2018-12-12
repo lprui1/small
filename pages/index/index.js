@@ -43,16 +43,19 @@ Page({
     let key = index+1
     let key1 = `class-${key}`
     var ss = wx.getStorageSync(key1)
+   
     if(ss == ''){
       wx.request({
         url: 'http://bl.7yue.pro/v1/classic/' + index + '/next',
         success: (res => {
+          wx.setStorageSync("key", key1)
           this.setData({
             list: res.data
           })
         })
       })
     }else{
+      wx.setStorageSync("key", key1)
       this.setData({
         list: ss.data
       })
