@@ -46,9 +46,17 @@ f-like {
   margin-top:-30rpx;
   margin-right:30rpx;
 }
+.prepanle1 {
+  text-align: center;
+}
 .prepanle1>image{
   width:100%;
   height:240rpx;
+}
+.prepanle1>.yy {
+  width:240rpx;
+  height:240rpx;
+  border-radius: 50%; 
 }
 /*文字*/
 .panletext{
@@ -59,4 +67,5 @@ f-like {
   overflow: hidden;
   text-overflow:ellipsis;
   white-space: wrap;
+  text-align: left;
 }
