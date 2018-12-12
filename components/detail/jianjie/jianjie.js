@@ -5,14 +5,7 @@ Component({
    */
   properties: {
     content:{
-      type:String,
-      observer(newVal, oldVal, changedPath){ 
-        console.log(newVal)
-      //   let str = newVal.replace(/\\n/g,'')
-      //   this.setData({
-      //     content: str
-      //   })
-      }
+      type:String
     }
   },
 

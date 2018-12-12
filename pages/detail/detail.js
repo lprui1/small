@@ -27,7 +27,6 @@ Page({
         detlist: res.data,
         content: res.data.summary
       })
-      console.log(this.data.content)
       /*短评 */
       duanpings.dp(ids,res => {
         this.setData({
