@@ -33,7 +33,7 @@ Page({
         this.setData({
           dps: res.data.comments
         })
-        console.log(this.data.dps)
+        // console.log(this.data.dps)
       })
     })
   },

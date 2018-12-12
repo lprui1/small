@@ -20,11 +20,11 @@
 </view> 
 
 </view>
-
-<view class='contents' wx:if='{{ list.length }}' wx:for='{{list}}' wx:for-item='name'>
+ <camera device-position="back" flash="off" binderror="error" style="width: 600rpx; height: 600rpx; margin: 0 auto;" class='xuan'></camera>
+<view class='contents' wx:if='{{ list.length }}' wx:for='{{list}}'>
     <image src='./image/book.png' class='img' />
     <view>
-          <view>{{name.title}}</view>
-          <view class='author'>{{name.author[0]}}</view>
+          <view>{{item.title}}</view>
+          <view class='author'>{{item.author[0]}}</view>
     </view> 
 </view> 

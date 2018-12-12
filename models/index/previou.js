@@ -13,11 +13,15 @@ class prev extends HTTP {
         url: "classic/" + index + "/previous",
         success: res => {
           list(res)
+          console.log(key1)
           wx.setStorageSync(key1,res)
+          wx.setStorageSync("key", key1)
         }
       })
     }else{
       list(ss)
+      wx.setStorageSync("key", key1)
+      console.log(key1)
     }
   }
 }

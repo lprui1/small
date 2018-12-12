@@ -12,7 +12,6 @@ class likehttp extends HTTP{
           type:category     
              },
              success:res => {
-
              }
       })
   }
