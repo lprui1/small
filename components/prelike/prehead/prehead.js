@@ -4,8 +4,11 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    count:{
-      type:Number
+    likenum:{
+      type:Number,
+      observer(newVal, oldVal, changedPath){
+        console.log(newVal)
+      }
     },
     avatarUrls:{
       type:String
@@ -20,7 +23,8 @@ Component({
    */
   data: {
     avatarUrls:'',
-    nickName:''
+    nickName:'',
+    likenum:''
   },
 
   /**

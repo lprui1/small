@@ -14,7 +14,7 @@
       <text>关于我们</text>
     </view>
     <view class="ownpanle">
-      <view class="numb">{{count}}</view>
+      <view class="numb">{{ likenum }}</view>
       <text>我的书单</text>
     </view>
   </view>

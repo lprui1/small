@@ -1,3 +1,4 @@
 <!--components/share/share.wxml-->
+<button></button>
 <image src='./image/3.png' class='img' bindtap='music'/>
 <!-- <view bindtap='pai'>拍照</view> -->

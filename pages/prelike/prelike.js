@@ -11,7 +11,7 @@ Page({
   data: {
     prelist:[],
     lx:'',
-    likenum:{},
+    likenum:'',
     avatarUrl: "",//用户头像
     nickName: "",//用户昵称
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -28,11 +28,10 @@ Page({
       })
     }),
     httpTwo.modelindex(res => {
-      console.log(res.data)
       this.setData({
-        likenum: res.data
+        likenum: res.data.count
       })
-      // console.log(this.data.likenum)
+      console.log(this.data.likenum)
     })
     var that = this;
     wx.getSetting({
