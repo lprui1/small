@@ -1,3 +1,4 @@
+
 import { http } from '../../models/index/index.js'
 import { likehttp } from '../../models/index/like.js'
 import { prev } from '../../models/index/previou.js'
@@ -8,7 +9,6 @@ const backgroundAudioManager = wx.getBackgroundAudioManager()
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     list: {},
@@ -18,13 +18,10 @@ Page({
   prev:function(ev){
     let index = Number(ev.detail.data)
     prevss.prevs(index,res => {
-      // console.log(key)
         this.setData({
           list:res.data
         })
     })
-    // this.data.urls = backgroundAudioManager.src
-    // console.log(this.data.urls)
   },
   onlike :function(ev){
       let behavior = ev.detail.behavior
@@ -69,7 +66,7 @@ Page({
   },
   onLoad: function (e) {
       https.modelindex(res => {
-        // console.log(res)
+        console.log(res)
         this.setData({
           list:res.data
         })

@@ -21,7 +21,7 @@ class prev extends HTTP {
     }else{
       list(ss)
       wx.setStorageSync("key", key1)
-      console.log(key1)
+      // console.log(key1)
     }
   }
 }

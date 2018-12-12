@@ -40,7 +40,7 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success(res) {
-              console.log(res)
+              // console.log(res)
               // var avatarUrl = 'userInfo.avatarUrl';
               // var nickName = 'userInfo.nickName';
               that.setData({
