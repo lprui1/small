@@ -1,6 +1,9 @@
 <!--footer-->
 <view class='footers'>
-  <input placeholder='请输入你的短评'></input>
+  <view class="left">
+    <input placeholder='请输入你的短评' bindinput="dp"></input>
+    <text bindtap='sub'>提交</text>
+  </view>
   <view class="fright">
     <f-like count/>
     <f-share />

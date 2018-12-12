@@ -2,7 +2,6 @@
   "pages": [
     "pages/prelike/prelike",
     "pages/index/index",
-   
     "pages/booklist/booklist",
     "pages/Indexdetail/index",
     "pages/detail/detail"

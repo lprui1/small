@@ -8,7 +8,8 @@
         <text class="ly" wx:else="{{item.type === 300}}">句子</text>
         <f-like count="{{item.fav_nums}}" like="{{item.like_status}}"/>
       </view>
-      <image src="{{item.image}}"></image>
+      <image src="{{item.image}}" wx:if="{{item.type === 100||item.type === 300}}"></image>
+      <image src="{{item.image}}" wx:if="{{item.type === 200}}" class='yy'></image>
       <view class="panletext">
         {{item.content}}
       </view>

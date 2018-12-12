@@ -9,13 +9,29 @@
   border-top:1px solid #ccc;
   box-sizing:border-box;
 }
-.footers>input{
+.left{
+  width:80%;
+  display: flex;
+  justify-content: space-between;
+}
+.left>input{
   width:408rpx;
   height:56rpx;
   border:1px solid #000;
   border-radius:30rpx;
   font-size:22rpx;
   padding:0 20rpx;
+}
+.left>text{
+  width:70rpx;
+  font-size: 26rpx;
+  height:56rpx;
+  line-height:56rpx;
+  text-align:center;
+  padding:0 10rpx;
+  background:red;
+  color:#fff;
+  border-radius:30rpx;
 }
 .fright{
   width:140rpx;
