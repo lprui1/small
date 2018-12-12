@@ -10,5 +10,5 @@
     <f-bookmess Detlist="{{detlist}}"/>
   </view>
   <!--页脚-->
-  <f-footer />
+  <f-footer Detlist="{{detlist}}"/>
 </view>
