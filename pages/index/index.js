@@ -18,6 +18,7 @@ Page({
   prev:function(ev){
     let index = Number(ev.detail.data)
     prevss.prevs(index,res => {
+      // console.log(key)
         this.setData({
           list:res.data
         })
@@ -65,7 +66,7 @@ Page({
   },
   onLoad: function (e) {
       https.modelindex(res => {
-        console.log(res)
+        // console.log(res)
         this.setData({
           list:res.data
         })

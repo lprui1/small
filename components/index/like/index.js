@@ -27,13 +27,19 @@ Component({
   methods: {
     onlike() {
       let { like } = this.properties
+      console.log(like)
       let {count} = this.properties
       count = like ? count - 1 : count + 1
-      // console.log(like)
+      let love = wx.getStorageSync("key")
+      let ss = wx.getStorageSync(love)
+      ss.data.fav_nums = count
+      ss.data.like_status = !ss.data.like_status
+      wx.setStorageSync(love,ss)
       this.setData({
         like: !like,
         count
       })
+
       let behavior = this.properties.like ? 'like' : 'cancel'
       // console.log(behavior)
       this.triggerEvent(

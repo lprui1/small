@@ -11,7 +11,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+      src:'',
+    camera:false
   },
 
   /**
@@ -30,6 +31,18 @@ Component({
         back.onEnded(() => {
           console.log('猪回来了')
         })
+      },
+      pai:function(){
+          console.log(111)
+        this.ctx = wx.createCameraContext()
+          this.ctx.takePhoto({
+            quality: 'high',
+            success: (res) => {
+              this.setData({
+                src: res.tempImagePath
+              })
+            }
+          })
       }
   }
 })
