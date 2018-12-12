@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/prelike/prelike",
     "pages/index/index",
+    "pages/prelike/prelike",
     "pages/booklist/booklist",
     "pages/Indexdetail/index",
     "pages/detail/detail"

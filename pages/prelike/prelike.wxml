@@ -1,5 +1,5 @@
 <view class="prelike">  
   <f-prehead avatarUrls="{{avatarUrl}}" nickName="{{nickName}}" likenum="{{likenum}}"/>
-  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" wx:if="{{!nickName}}" class='login'></button>
+  <f-login code='1' bind:logins="login"></f-login>
   <f-prelist Prelist="{{prelist}}"/>
 </view>

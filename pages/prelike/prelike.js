@@ -53,18 +53,17 @@ Page({
       }
     })
   },
-  bindGetUserInfo(e) {
-    console.log(e.detail.userInfo)
+  login: function(ev) {
     this.setData({
-      avatarUrl: e.detail.userInfo.avatarUrl,
-      nickName: e.detail.userInfo.nickName,
+      avatarUrl: ev.detail.message.avatarUrl,
+      nickName: ev.detail.message.nickName,
     })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**
