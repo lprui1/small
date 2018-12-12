@@ -4,8 +4,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
+
     Detlist:{
       type: Object
+    },
+    title:{
+      type:String
+    },
+    data:{
+      type:Number
     }
   },
 
@@ -20,6 +27,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+      prev(){
+            let { data } = this.properties
+            console.log(data)
+        this.triggerEvent("pre",{
+          data
+        })
+      }
   }
 })
