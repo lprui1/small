@@ -1,7 +1,6 @@
 /* components/index/music/music.wxss */
 .content {
   position: relative;
-  
 }
 .image {
   width: 100%;

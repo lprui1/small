@@ -6,7 +6,8 @@
   <view class="detailmess">
     <f-mess Detlist="{{detlist}}"/> 
     <f-duanping bind:lists="details" DP="{{dps}}"/>
-    <f-jianjie Detlist="{{detlist}}"/>
+    <!-- <wxs src="../../utils/filter.wxs" module="util"/> -->
+    <f-jianjie content="{{content}}"/>
     <f-bookmess Detlist="{{detlist}}"/>
   </view>
   <!--页脚-->

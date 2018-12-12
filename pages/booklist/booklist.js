@@ -53,7 +53,7 @@ Page({
       }
     }),
       shortComments.modelindex(res => {
-        // console.log(res)
+        console.log(res)
       })
 
       },

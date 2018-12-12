@@ -1,0 +1,12 @@
+// 方法定义-"删除/n"
+var deletes = function (content) {
+  // wxs逻辑编写
+  
+  var reg = getRegExp("\\\\n","g");
+  return content.replace(reg,'\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+  
+}
+// wxs提供对外接口
+module.exports = {
+  deletes: deletes
+}

@@ -11,7 +11,8 @@ Page({
    */
   data: {
     detlist:{},
-    dps:[]
+    dps:[],
+    content:''
   },
 
   /**
@@ -21,9 +22,12 @@ Page({
     /*详情 */
     let ids = options.id
     Indexs.xiangqing(ids,res => {
+      
       this.setData({
-        detlist: res.data
+        detlist: res.data,
+        content: res.data.summary
       })
+      console.log(this.data.content)
       /*短评 */
       duanpings.dp(ids,res => {
         this.setData({
