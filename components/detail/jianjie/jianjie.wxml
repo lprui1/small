@@ -4,7 +4,6 @@
   <view class="title">内容简介</view>
   <wxs src="../../../utils/filter.wxs" module="util"/>
   <view class="mess">
-  
     <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ util.deletes(content) }}</text>
   </view>
 </view>

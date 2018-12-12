@@ -1,7 +1,8 @@
 <view class="duanping">
   <view class="title">短评</view>
   <view class="dpmain">
-    <view class="dpone" wx:for="{{DP}}" wx:key="index">
+    <view wx:for="{{DP}}" wx:key="index" class="dp">
+    <!-- <view class="dpone" wx:for="{{DP}}" wx:key="index" class="dp"> -->
       <text>{{item.content}}</text>
       <text>+{{item.nums}}</text>
     </view>

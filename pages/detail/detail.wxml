@@ -5,7 +5,7 @@
   <!--详情信息-->
   <view class="detailmess">
     <f-mess Detlist="{{detlist}}"/> 
-    <f-duanping bind:lists="details" DP="{{dps}}"/>
+    <f-duanping bind:lists="details" DP="{{dps}}" dp="dpone"/>
     <!-- <wxs src="../../utils/filter.wxs" module="util"/> -->
     <f-jianjie content="{{content}}"/>
     <f-bookmess Detlist="{{detlist}}"/>

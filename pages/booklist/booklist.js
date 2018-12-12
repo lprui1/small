@@ -42,7 +42,6 @@ Page({
    */
   onLoad: function (options) {
     hotlists.modelindex(res => {
-      console.log(res)
       this.setData({
         list: res.data
       })
@@ -53,7 +52,7 @@ Page({
       }
     }),
       shortComments.modelindex(res => {
-        console.log(res)
+        // console.log(res)
       })
 
       },

@@ -4,15 +4,16 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    count:{
-      type:Number
+    Likenum:{
+      type:String
     },
     avatarUrls:{
       type:String
     },
     nickName:{
       type:String
-    }
+    },
+    // console.log(this.properties.coun)
   },
 
   /**
@@ -27,6 +28,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+   book() {
+     console.log(this.properties.Likenum)
+   }
   }
 })

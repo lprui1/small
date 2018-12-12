@@ -5,7 +5,6 @@ class shortComment extends HTTP {
     this.request({
       url: 'book/1/short_comment',
       success: res => {
-        console.log(res)
         callback(res)
       }
     })

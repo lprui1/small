@@ -9,9 +9,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    btnVal:"点击授权",
     prelist:[],
     lx:'',
-    likenum:{},
+    likenum:'',
     avatarUrl: "",//用户头像
     nickName: "",//用户昵称
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -21,18 +22,18 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
+  onLoad: function (options) {
+    /*喜欢列表 */
     https.modelindex(res => {
       this.setData({
         prelist:res.data
       })
     }),
+    /*喜欢数量 */
     httpTwo.modelindex(res => {
-      console.log(res.data)
       this.setData({
-        likenum: res.data
+        likenum: res.data.count
       })
-      // console.log(this.data.likenum)
     })
     var that = this;
     wx.getSetting({
@@ -41,7 +42,6 @@ Page({
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success(res) {
-              console.log(res)
               // var avatarUrl = 'userInfo.avatarUrl';
               // var nickName = 'userInfo.nickName';
               that.setData({
@@ -53,6 +53,9 @@ Page({
         }
       }
     })
+  },
+  getUserInfo(event) {
+    console.log(event)
   },
   bindGetUserInfo(e) {
     console.log(e.detail.userInfo)

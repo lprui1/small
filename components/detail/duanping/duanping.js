@@ -1,5 +1,6 @@
 // components/detail/duanping/duanping.js
 Component({
+  externalClasses:['dp'],
   /**
    * 组件的属性列表
    */
