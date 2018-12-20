@@ -16,7 +16,8 @@ Page({
   data: {
     list:[],
     idlist:[],
-    shows:false
+    shows:false,
+    pageIndex:0
   },
   searchs: function (ev) {
       // console.log(ev)
@@ -46,19 +47,14 @@ Page({
         list: res.data
       })
       for (let i of res.data) {
-        // console.log(i.id)
         this.data.idlist.push(i.id)
-        // console.log(this.data.idlist)
       }
     }),
       shortComments.modelindex(res => {
-        // console.log(res)
+        
       })
 
       },
-   
-  
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -91,14 +87,31 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    //显示顶部刷新图标
+    // wx.showNavigationBarLoading();
+    var that = this;
+    hotlists.modelindex(res => {
+      console.log(res)
+    })
+    that.setData({
+      //每次触发下拉事件pageIndex = 0
+      pageIndex:0,
+    })
+    // console.log('下拉刷新')
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    that.setData({
+      pageIndex:5
+    })
+    // wx.showLoading({
+    //   title: '玩命加载中',
+    // })
+    //隐藏加载框
+    // wx.hideLoading()
   },
 
   /**

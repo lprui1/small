@@ -1,16 +1,17 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/prelike/prelike",
     "pages/booklist/booklist",
+    "pages/prelike/prelike",
+    "pages/index/index",
     "pages/Indexdetail/index",
     "pages/detail/detail"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "color": "#c7c7c7",

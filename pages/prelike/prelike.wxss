@@ -4,7 +4,6 @@
 .login {
   width:120rpx;
   height:120rpx;
-  border:1px solid red;
   position: absolute;
   top:250rpx;
   left:310rpx;

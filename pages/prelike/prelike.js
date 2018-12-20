@@ -9,7 +9,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    btnVal:"点击授权",
     prelist:[],
     lx:'',
     likenum:'',
@@ -37,15 +36,14 @@ Page({
     })
     var that = this;
     wx.getSetting({
-      success(res) {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+      success(data){
+        // console.log(data)
+        if(data.authSetting['scope.userInfo']){
+          //授权成功，可以直接调用getUserInfo获取头像昵称
           wx.getUserInfo({
-            success(res) {
-              that.setData({
-                avatarUrl: res.userInfo.avatarUrl,
-                nickName: res.userInfo.nickName,
-              })
+            success(data) {
+              avatarUrl: data.userInfo.avatarUrl
+              nickName: data.userInfo.nickName
             }
           })
         }
@@ -56,14 +54,18 @@ Page({
     console.log(event)
   },
   bindGetUserInfo(e) {
-    console.log(e.detail.userInfo)
-  },
-  login: function(ev) {
+    console.log(e)
     this.setData({
-      avatarUrl: ev.detail.message.avatarUrl,
-      nickName: ev.detail.message.nickName,
+      avatarUrl: e.detail.userInfo.avatarUrl,
+      nickName: e.detail.userInfo.nickName,
     })
   },
+  // login: function(ev) {
+  //   this.setData({
+  //     avatarUrl: ev.detail.message.avatarUrl,
+  //     nickName: ev.detail.message.nickName,
+  //   })
+  // },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -96,6 +98,9 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+    // //显示顶部刷新图标
+    // wx.showNavigationBarLoading();
+    // var that = this;
 
   },
 

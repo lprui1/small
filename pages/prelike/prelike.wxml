@@ -1,14 +1,8 @@
 <view class="prelike">  
-  <!-- <f-prehead avatarUrls="{{avatarUrl}}" nickName="{{nickName}}" Likenum="{{likenum}}"/>
-  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" wx:if="{{!nickName}}" class='login'></button>
+  <f-prehead likenum="{{likenum}}" avatarUrls="{{avatarUrl}}" nickName="{{nickName}}"/>
+  <button open-type='getUserInfo' bindgetuserinfo='bindGetUserInfo' class="login"></button>
   <f-prelist Prelist="{{prelist}}"/>
-</view> -->
-<!-- <view class="prelike">  
-  <f-prehead Likenum="{{likenum}}"/>
-  <button open-type='getUserInfo' bindgetuserinfo='getUserInfo' class="login">{{btnVal}}</button>
-  <f-prelist Prelist="{{prelist}}"/>
-</view> -->
-  <f-prehead avatarUrls="{{avatarUrl}}" nickName="{{nickName}}" likenum="{{likenum}}"/>
+  <!-- <f-prehead avatarUrls="{{avatarUrl}}" nickName="{{nickName}}" likenum="{{likenum}}"/>
   <f-login code='1' bind:logins="login"></f-login>
-  <f-prelist Prelist="{{prelist}}"/>
+  <f-prelist Prelist="{{prelist}}"/> -->
 </view>

@@ -10,13 +10,12 @@ Component({
         console.log(newVal)
       }
     },
-    avatarUrls:{
+    avatarUrls: {
       type:String
     },
-    nickName:{
+    nickName: {
       type:String
-    },
-    // console.log(this.properties.coun)
+    }
   },
 
   /**
@@ -33,7 +32,7 @@ Component({
    */
   methods: {
    book() {
-     console.log(this.properties.Likenum)
+     console.log(this.properties)
    }
   }
 })
